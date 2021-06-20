@@ -1,17 +1,16 @@
 import speech_recognition as sr
-from textblob import TextBlob
-from summarizer import TransformerSummarizer
-import re
+# from textblob import TextBlob
 
-# r = sr.Recognizer()
-# with sr.Microphone() as source:
-#     print("Speak Anything :")
-#     audio = r.listen(source)
-#     try:
-#         text = r.recognize_google(audio)
-#         print("You said : {}".format(text))
-#     except:
-#         print("Sorry could not recognize what you said")
+
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    print("Speak Anything :")
+    audio = r.listen(source)
+    try:
+        text = r.recognize_google(audio)
+        print("You said : {}".format(text))
+    except:
+        print("Sorry could not recognize what you said")
 
 
 data = """
