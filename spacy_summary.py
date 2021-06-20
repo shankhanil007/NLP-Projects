@@ -1,3 +1,8 @@
+# pip install -U spacy
+# python -m spacy download en_core_web_sm
+# python -m spacy download en_core_web_sm
+# https://youtu.be/9PoKellNrBc
+
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
@@ -30,13 +35,11 @@ for word in doc:
                 word_frequencies[word.text] += 1
                 
 
-
 max_frequency = max(word_frequencies.values())
 max_frequency
 
 for word in word_frequencies.keys():
     word_frequencies[word] = word_frequencies[word]/max_frequency
-
 
 
 sentence_tokens = [sent for sent in doc.sents]

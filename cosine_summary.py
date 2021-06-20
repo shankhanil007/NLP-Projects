@@ -1,3 +1,4 @@
+# DotSlash EduHelp Repo
 
 import numpy as np     
 import networkx as nx 
@@ -17,7 +18,6 @@ sky. Some even concluded that the heavens were on fire. '''
 
 
 # Summarize using Cosine Similarity
-
 class cosine_summary:
     
     def extract_vector(self, sentence, all_words, stop_words):
